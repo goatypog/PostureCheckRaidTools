@@ -155,9 +155,12 @@ return (
       color: 'white',
       minHeight: '100vh',
       padding: '2rem',
-      fontFamily: 'Segoe UI, Roboto, sans-serif'  // ✅ Add this line
+      fontFamily: 'Segoe UI, Roboto, sans-serif'
+      display: 'flex',
+      justifyContent: 'center'
     }}
   >
+     <div style={{ width: '900px' }}>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
   <span style={{ fontSize: '2rem', marginRight: '0.75rem' }}>🐍</span>
   <h1 style={{ fontSize: '2rem', margin: 0 }}>Posture Check Raid Tools</h1>
@@ -304,6 +307,7 @@ return (
           </table>
         </>
       )}
-    </div>
+    </div> {/* End fixed width container */}
+  </div>   {/* End centered background wrapper */}
   );
 }
