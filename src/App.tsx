@@ -287,7 +287,7 @@ return (
                   <td key={role} style={{ verticalAlign: 'top', padding: '0.3rem', width: '80px', wordWrap: 'break-word' }}>
                     {currentBoss.assigned[role].map(char => (
                       <div key={char.id} style={{ background: '#333', padding: '0.2rem', marginBottom: '0.2rem', fontSize: '0.8rem' }}>
-                        <span style={{ color: CLASS_COLORS[char.className], fontSize: '0.9rem', fontWeight: 'bold' }}>{char.name}</span> ({char.className})
+                        <span style={{ color: CLASS_COLORS[char.className], fontSize: '0.9rem', fontWeight: 'bold' }}>{char.name}</span>
                         <button onClick={() => setBossRosters(prev => prev.map(b => b.bossName !== selectedBoss ? b : {
                           ...b,
                           assigned: {
