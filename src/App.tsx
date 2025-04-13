@@ -284,7 +284,7 @@ return (
             <tbody>
               <tr>
                 {([...ROLES, "Standby"] as ExtendedRole[]).map(role => (
-                  <td key={role} style={{ verticalAlign: 'top', padding: '0.5rem', width: '200px' }}>
+                  <td key={role} style={{ verticalAlign: 'top', padding: '0.3rem', width: '130px', wordWrap: 'break-word' }}>
                     {currentBoss.assigned[role].map(char => (
                       <div key={char.id} style={{ background: '#333', padding: '0.2rem', marginBottom: '0.2rem', fontSize: '0.8rem' }}>
                         <span style={{ color: CLASS_COLORS[char.className] }}>{char.name}</span> ({char.className})
